@@ -1,0 +1,14 @@
+
+
+
+
+<h1>Questions#ask</h1>
+<p>What the hell are you doing?</p>
+
+<form action="/questions/ask" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+ <input type="text" name="question" placeholder="What are you doing?">
+<input type="submit"></form>
+
+<p><%= @question %></p>
+<p><%= @answer %></p>
